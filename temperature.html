@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celcius to faranheit</title>
+
+</head>
+<body>
+    <input type="number" id="tmp" placeholder="Enter temperature in celcius" step="any">c
+    <button onclick="convert()">convert</button>
+    <h1></h1>
+    <script>
+        function convert(){
+            var celcius=document.getElementById("tmp").value;
+            var faranheit=(celcius*9/5)+32;
+            console.log(document.getElementsByTagName("h1"));
+           document.getElementsByTagName("h1")[0].innerHTML=`${faranheit} faranheit`;
+        }
+    </script>
+</body>
+</html>
